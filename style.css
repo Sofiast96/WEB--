@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #222;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                url("images/hero.jpg") center/cover no-repeat;
+    color: white;
+    padding: 30px 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.btn,
+.btn-outline {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    background: #ff6b35;
+    color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+    margin-top: 150px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.price {
+    color: #ffdd57;
+}
+
+.primary {
+    background: #ff6b35;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 80px;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+}
+
+/* DESTINATIONS */
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* TRIPS */
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.trip-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.trip-card span {
+    color: gray;
+    font-size: 14px;
+}
+
+.trip-card h3 {
+    margin: 15px 0;
+}
