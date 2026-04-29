@@ -3,7 +3,7 @@
 Адаптивний лендинг туристичної компанії Viatours, зверстаний за макетом Figma.
 
 **Жива сторінка:** [GitHub Pages](https://sofiast96.github.io/WEB--)  
-**Макет Figma:** [Посилання на макет] (https://www.figma.com/design/0rMwLECwSG82IIahLiE3R1/100--Travel-Landing-website-templates--Community-?node-id=2103-8741&t=EmJKyfZyh5rdIS9b-1)
+**Макет Figma:** [Посилання на макет](https://www.figma.com/design/0rMwLECwSG82IIahLiE3R1/100--Travel-Landing-website-templates--Community-?node-id=2103-8741&t=EmJKyfZyh5rdIS9b-1)
 
 ## Технології
 - HTML5 (семантична розмітка)
