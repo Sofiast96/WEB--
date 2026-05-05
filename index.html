@@ -1,74 +1,494 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Viator UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viatours - Iceland's legendary Golden Circle</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header class="hero">
-    <nav class="navbar">
-        <div class="logo">viatours</div>
-        <ul class="menu">
-            <li>Home</li>
-            <li>Tour</li>
-            <li>Destination</li>
-            <li>Activities</li>
-            <li>Pages</li>
-            <li>Contact</li>
-        </ul>
-        <div class="auth">
-            <button class="btn-outline">USD</button>
-            <button class="btn">Sign up</button>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="images/viatours.png" alt="Viatours Logo" height="30">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <span class="currency">USD</span>
+                <a href="#" class="sign-up">Sign up</a>
+                <button class="btn-login">Log in</button>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <div class="hero-content">
-        <span class="price">Starting at $789</span>
-        <h1>Iceland's legendary <br>Golden Circle</h1>
-        <p>
-            Enjoy a full-day bus tour of Iceland’s Golden Circle,
-            including Thingvellir National Park.
-        </p>
-        <button class="btn primary">View Tours</button>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="price-tag">Starting at $978</span>
+                <h1>Iceland's legendary <br> Golden Circle</h1>
+                <p>Enjoy a full-day bus tour of Iceland's legendary Golden Circle.</p>
+                <p>Soak in the warm thermal waters of the Secret Lagoon.</p>
+                <span class="waterfall">Gullfoss Waterfall</span>
+                <a href="#" class="btn-view">View Tour</a>
+                <div class="slider-dots">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-    <h2>Trending destinations</h2>
-    <div class="destinations">
-        <div class="card">Paris</div>
-        <div class="card">Singapore</div>
-        <div class="card">Roma</div>
-        <div class="card">Bangkok</div>
-        <div class="card">Bali</div>
-        <div class="card">Phuket</div>
-        <div class="card">Tokyo</div>
-        <div class="card">Cappadocia</div>
+    <!-- Trending Destinations -->
+    <section class="destinations container section-padding">
+        <div class="section-header">
+            <h2>Trending destinations</h2>
+            <a href="#" class="see-all">See all</a>
+        </div>
+        <div class="dest-grid">
+            <div class="dest-card">
+                <img src="images/Paris.png" alt="Paris">
+                <div class="dest-info"><h3>Paris</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Singapur.png" alt="Singapore">
+                <div class="dest-info"><h3>Singapore</h3><p>300+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Roma.png" alt="Roma">
+                <div class="dest-info"><h3>Roma</h3><p>400+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Bangkok.png" alt="Bangkok">
+                <div class="dest-info"><h3>Bangkok</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Bali.png" alt="Bali">
+                <div class="dest-info"><h3>Bali</h3><p>600+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Phuket.png" alt="Phuket">
+                <div class="dest-info"><h3>Phuket</h3><p>200+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Tokyo.png" alt="Tokyo">
+                <div class="dest-info"><h3>Tokyo</h3><p>700+ Tours</p></div>
+            </div>
+            <div class="dest-card">
+                <img src="images/Cappadocia.png" alt="Cappadocia">
+                <div class="dest-info"><h3>Cappadocia</h3><p>900+ Tours</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Trips -->
+    <section class="featured-trips container section-padding">
+        <div class="section-header">
+            <h2>Featured Trips</h2>
+            <div class="nav-arrows">
+                <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="trips-grid">
+            <!-- Картка 1: Centipede Tour – $189.25 -->
+            <div class="trip-card" style="background-image: url('images/Centipede Tour.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">Paris, France</p>
+                    <h4>Centipede Tour - Guided Arizona. Desert Tour by ATV</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$189.25</strong></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Картка 2: Molokini – $225 -->
+            <div class="trip-card" style="background-image: url('images/Molokini.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>Molokini and Turtle Town Snorkeling Adventure Aboard</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$225</strong></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Картка 3: Westminster – $943 -->
+            <div class="trip-card" style="background-image: url('images/Westminster.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">London, UK</p>
+                    <h4>Westminster Walking Tour & Westminster Abbey Entry</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$943</strong></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Картка 4: All Inclusive – $771 -->
+            <div class="trip-card" style="background-image: url('images/All Inclusive Ultimate Circle Island.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>All Inclusive Ultimate Circle Island Day Tour with Lunch</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$771</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="why-tourz-section">
+    <div class="why-tourz-layout">
+        <!-- Ліва колонка: велике фото людини -->
+        <div class="tourz-person-image">
+            <img src="images/Why.png" alt="Happy traveler" />
+        </div>
+
+        <!-- Права колонка: текст і картки переваг -->
+        <div class="why-tourz-content">
+            <div class="tourz-header">
+                <h2>Why choose Tourz</h2>
+                <p class="tourz-subhead">Most viewed and all-time top-selling services</p>
+            </div>
+
+            <div class="tourz-features-grid">
+                <div class="feature-card">
+                    <div class="feature-img-slot">
+                        <img src="images/ticket.svg.png" alt="Flexibility icon" />
+                    </div>
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free<br>cancellation and payment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img-slot">
+                        <img src="images/hot-air-balloon.svg fill.png" alt="Experiences icon" />
+                    </div>
+                    <h3>Memorable experiences</h3>
+                    <p>Browse and book tours and<br>activities so incredible.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img-slot">
+                        <img src="images/diamond.svg.png" alt="Quality icon" />
+                    </div>
+                    <h3>Quality at our core</h3>
+                    <p>High quality standards. Millions of<br>reviews.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="section">
-    <h2>Featured Trips</h2>
-    <div class="trips">
-        <div class="trip-card">
-            <span>4 days</span>
-            <h3>Arizona Desert Tour</h3>
-            <p>$250</p>
+    <!-- Popular Things to Do -->
+    <section class="popular-activities container section-padding">
+        <div class="section-header">
+            <h2>Popular things to do</h2>
+            <a href="#" class="see-all">See all</a>
         </div>
-        <div class="trip-card">
-            <span>5 days</span>
-            <h3>Albania Adventure</h3>
-            <p>$225</p>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <img src="images/City Tours.png" alt="City Tours">
+                <div class="activity-info"><h3>City Tours</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="activity-card">
+                <img src="images/Cultural Tours.png" alt="Cultural Tours">
+                <div class="activity-info"><h3>Cultural Tours</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="activity-card">
+                <img src="images/Day Cruises.png" alt="Day Cruises">
+                <div class="activity-info"><h3>Day Cruises</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="activity-card">
+                <img src="images/Bus Tours.png" alt="Bus Tours">
+                <div class="activity-info"><h3>Bus Tours</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="activity-card">
+                <img src="images/Beach Tours.png" alt="Beach Tours">
+                <div class="activity-info"><h3>Beach Tours</h3><p>100+ Tours</p></div>
+            </div>
+            <div class="activity-card">
+                <img src="images/Food Tours.png" alt="Food Tours">
+                <div class="activity-info"><h3>Food Tours</h3><p>100+ Tours</p></div>
+            </div>
         </div>
-        <div class="trip-card">
-            <span>3 days</span>
-            <h3>Westminster Abbey</h3>
-            <p>$943</p>
+    </section>
+
+   <!-- Our Footprints -->
+<section class="stats section-padding">
+    <div class="container">
+        <div class="section-header justify-center">
+            <h2>Our Footprints</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>932M</h3>
+                <p>Total Donations</p>
+            </div>
+            <div class="stat-box">
+                <h3>24M</h3>
+                <p>Campaigns Closed</p>
+            </div>
+            <div class="stat-box">
+                <h3>10M</h3>
+                <p>Happy People</p>
+            </div>
+            <div class="stat-box">
+                <h3>65M</h3>
+                <p>Our Volunteers</p>
+            </div>
         </div>
     </div>
 </section>
+
+    <!-- Best of New York -->
+    <section class="best-of-ny container section-padding">
+        <div class="section-header">
+            <h2>Best of New York</h2>
+            <div class="nav-arrows">
+                <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="trips-grid">
+            <div class="trip-card" style="background-image: url('images/Moloki and Turtle Town.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>Molokini and Turtle Town Snorkeling Adventure Aboard</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$225</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="trip-card" style="background-image: url('images/All Inclusive Ultimate Circle Island.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>All Inclusive Ultimate Circle Island Day Tour with Lunch</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$771</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="trip-card" style="background-image: url('images/Clear Kayak Tour of Shell Key.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$225</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="trip-card" style="background-image: url('images/Manua Kea Summit Sunset.png');">
+                <div class="trip-top">
+                    <div class="trip-badge">4 days</div>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="trip-content">
+                    <p class="trip-location">New York, USA</p>
+                    <h4>Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloa Pick Up</h4>
+                    <div class="trip-footer">
+                        <span class="trip-rating"><i class="fa-solid fa-star"></i> 4.8 (243)</span>
+                        <span class="trip-price">From <strong>$771</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What our Travelers are saying -->
+    <section class="testimonials-section container section-padding">
+        <h2 class="section-title text-center">What our Travelers are saying</h2>
+        <div class="testimonials-layout">
+            <div class="testimonials-left">
+                <div class="rating-block">
+                    <span class="big-rating">4.8</span>
+                    <div class="stars-large">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>1000+ reviews on TripAdvisor. Certificate of Excellence</p>
+                    <p class="happy-customers">16M <br> Happy customers</p>
+                </div>
+                <div class="trusted-brands">
+                    <p>Trusted by all the largest travel brands</p>
+                    <div class="brands-logos">
+                        <img src="images/amazon1.png" alt="amazon">
+                        <img src="images/AMD1.png" alt="AMDL">
+                        <img src="images/CISCO1.png" alt="dhl">
+                        <img src="images/CISCO1.png" alt="cisco">
+                        <img src="images/dropcam1.png" alt="dropcam">
+                        <img src="images/logitech1.png" alt="logitech">
+                        <img src="images/Spotsify1.png" alt="spottys">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-right">
+                <div class="review-cards">
+                    <div class="review-card">
+                        <span class="great-work-badge">Great Work</span>
+                        <p>“I think Educrat is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance”</p>
+                        <div class="author">
+                            <img src="images/Courtney Henry.png" alt="Courtney Henry">
+                            <div>
+                                <h4>Courtney Henry</h4>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Articles -->
+    <section class="articles container section-padding">
+        <div class="section-header">
+            <h2>Travel Articles</h2>
+            <a href="#" class="see-all">See all</a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-img">
+                    <img src="images/Kenya vs Tanzania.png" alt="Kenya vs Tanzania Safari">
+                </div>
+                <div class="article-content">
+                    <span class="date">April 06 2023</span>
+                    <span class="author">By Ali Tufan</span>
+                    <h3>Kenya vs Tanzania Safari: The Better African Safari Experience</h3>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img">
+                    <img src="images/Exploring the Serengeti.png" alt="Exploring the Serengeti">
+                </div>
+                <div class="article-content">
+                    <span class="date">April 07 2023</span>
+                    <span class="author">By Emily Johnson</span>
+                    <h3>Exploring the Serengeti: A Wildlife Adventure</h3>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img">
+                    <img src="images/By Maxwell Rhodes.png" alt="Into the Wild">
+                </div>
+                <div class="article-content">
+                    <span class="date">April 08 2023</span>
+                    <span class="author">By Maxwell Rhodes</span>
+                    <h3>Into the Wild: An Unforgettable Safari Journey</h3>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <p class="expert-text">Speak to our expert at <span>1-800-453-6744</span></p>
+                <div class="social">
+                    <span>Follow Us</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-main">
+                <div class="footer-col contact-col">
+                    <h4>Contact</h4>
+                    <p>328 Queensberry Street, North Melbourne VIC3051, Australia.</p>
+                    <p><a href="mailto:hi@viatours.com">hi@viatours.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Tour Reviews</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                        <li><a href="#">Data Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Get in Touch</a></li>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Live chat</a></li>
+                        <li><a href="#">How it works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to the free newsletter and stay up to date</p>
+                    <div class="sub-input">
+                        <input type="email" placeholder="Your email address">
+                        <button>Send</button>
+                    </div>
+                    <h4 class="mt-20">Mobile Apps</h4>
+                    <p><a href="#">iOS App</a></p>
+                    <p><a href="#">Android App</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copy">© Copyright Viatours 2024</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/footer.png" alt="Mastercard">
+                    <img src="images/Pay.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
