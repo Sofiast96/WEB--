@@ -47,7 +47,6 @@ ul {
     text-align: center;
 }
 
-/* ================= HEADER ================= */
 .main-header {
     position: absolute;
     width: 100%;
@@ -105,7 +104,6 @@ ul {
     cursor: pointer;
 }
 
-/* ================= HERO ================= */
 .hero {
     height: 100vh;
     min-height: 750px;
@@ -176,7 +174,6 @@ ul {
     opacity: 1;
 }
 
-/* ================= SECTION HEADER ================= */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -220,7 +217,6 @@ ul {
     border-color: var(--primary);
 }
 
-/* ================= DESTINATIONS ================= */
 .dest-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -261,7 +257,6 @@ ul {
     color: var(--text);
 }
 
-/* ================= TRIPS ================= */
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -359,8 +354,6 @@ ul {
     font-size: 18px;
     font-weight: 700;
 }
-
-/* ================= ACTIVITIES ================= */
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -407,7 +400,6 @@ ul {
     opacity: 0.9;
 }
 
-/* ================= STATS (FOOTPRINTS) ================= */
 .stats {
     background: var(--primary);
     color: white;
@@ -448,7 +440,7 @@ ul {
     font-size: 16px;
     margin: 0;
 }
-/* ================= TESTIMONIALS ================= */
+
 .testimonials-section {
     background: white;
 }
@@ -587,7 +579,6 @@ ul {
     color: var(--text);
 }
 
-/* ================= ARTICLES ================= */
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -658,7 +649,6 @@ ul {
     transform: translateX(5px);
 }
 
-/* ================= FOOTER ================= */
 .footer {
     background: #FEF6F1;
     padding: 80px 0 40px;
@@ -794,7 +784,6 @@ ul {
     height: 25px;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
     .dest-grid,
     .trips-grid {
@@ -831,7 +820,6 @@ ul {
         grid-template-columns: 1fr;
     }
 }
-/* ===== Секція Why choose Tourz ===== */
 .why-tourz-section {
     background: #ffffff;
     border-radius: 32px;
@@ -847,9 +835,8 @@ ul {
     flex-wrap: wrap;
 }
 
-/* Ліва колонка – велике фото людини */
 .tourz-person-image {
-    flex: 0 0 45%;                /* займає майже половину ширини, великий блок */
+    flex: 0 0 45%;               
     max-width: 500px;
     text-align: center;
 }
@@ -857,13 +844,12 @@ ul {
 .tourz-person-image img {
     width: 100%;
     height: auto;
-    max-height: 550px;           /* можна збільшити вертикально */
+    max-height: 550px;         
     border-radius: 28px;
     object-fit: cover;
     box-shadow: 0 20px 35px rgba(0,0,0,0.12);
 }
 
-/* Права колонка – контент */
 .why-tourz-content {
     flex: 1 1 500px;
 }
@@ -886,7 +872,6 @@ ul {
     margin: 0;
 }
 
-/* Три картки */
 .tourz-features-grid {
     display: flex;
     flex-wrap: wrap;
@@ -940,7 +925,6 @@ ul {
     margin: 0;
 }
 
-/* ===== Адаптивність ===== */
 @media (max-width: 900px) {
     .why-tourz-layout {
         flex-direction: column;
