@@ -1,3 +1,22 @@
+// Файл: js/trips-data.js
+// Опис: JavaScript-модуль, який містить структуру даних для списку "Featured Trips".
+
+/**
+ * @typedef {Object} Trip
+ * @property {number} id - Унікальний ідентифікатор туру.
+ * @property {string} title - Назва туру.
+ * @property {string} location - Розташування (місто, країна).
+ * @property {number} duration - Тривалість туру в днях.
+ * @property {number} price - Ціна туру в доларах США (USD).
+ * @property {number} rating - Рейтинг туру (від 1 до 5).
+ * @property {number} reviewsCount - Кількість відгуків.
+ * @property {string} imageUrl - URL (шлях) до зображення туру для фону.
+ */
+
+/**
+ * Масив об'єктів, що представляють "Featured Trips" на головній сторінці.
+ * Кожен об'єкт відповідає структурі {@link Trip}.
+ */
 const featuredTrips = [
     {
         id: 1,
